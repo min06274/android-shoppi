@@ -7,15 +7,15 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background = "@color/shoppi_white">
+        android:background="@color/shoppi_white">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_product_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:navigationIcon="@drawable/ic_gnb_back"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_product_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
 
-        app:layout_scrollFlags="scroll|enterAlways"/>
+            app:navigationIcon="@drawable/ic_gnb_back" />
 
 
     </com.google.android.material.appbar.AppBarLayout>
