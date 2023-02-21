@@ -47,9 +47,6 @@ class HomeFragment:Fragment() {
                 .load(iconUrl)
                 .into(toolbarIcon)
 
-
-
-
         }
     }
 }
