@@ -72,7 +72,9 @@
                 app:layout_constraintTop_toBottomOf="@id/viewpager_home_banner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-
+                app:tabBackground="@drawable/selector_viewpager_indicator"
+                app:tabIndicatorHeight="0dp"
+                app:tabGravity="center"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
