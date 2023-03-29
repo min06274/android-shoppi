@@ -1,4 +1,4 @@
-package min.bo.shoppi.android
+package min.bo.shoppi.android.ui
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,10 +10,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import min.bo.shoppi.android.Banner
+import min.bo.shoppi.android.GlideApp
+import min.bo.shoppi.android.R
 import java.text.DecimalFormat
 import kotlin.math.roundToInt
 
-class HomeBannerAdapter:ListAdapter<Banner,HomeBannerAdapter.HomeBannerViewHolder>(BannerDiffCallback()) {
+class HomeBannerAdapter:ListAdapter<Banner, HomeBannerAdapter.HomeBannerViewHolder>(
+    BannerDiffCallback()
+) {
 
 
 
@@ -40,7 +45,7 @@ class HomeBannerAdapter:ListAdapter<Banner,HomeBannerAdapter.HomeBannerViewHolde
         private val bannerDetailPriceTextView = view.findViewById<TextView>(R.id.tv_banner_detail_product_price)
 
 
-        fun bind(banner:Banner){
+        fun bind(banner: Banner){
             loadImage(banner.backgroundImageUrl,bannerImageView)
             bannerBadgeTextView.text = banner.badge.label
             bannerBadgeTextView.background = ColorDrawable(Color.parseColor(banner.badge.backgroundColor))
