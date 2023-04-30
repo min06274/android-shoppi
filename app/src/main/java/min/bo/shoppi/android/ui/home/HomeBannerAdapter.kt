@@ -1,4 +1,4 @@
-package min.bo.shoppi.android.ui
+package min.bo.shoppi.android.ui.home
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

@@ -1,4 +1,4 @@
-package min.bo.shoppi.android
+package min.bo.shoppi.android.model
 
 import com.google.gson.annotations.SerializedName
 
