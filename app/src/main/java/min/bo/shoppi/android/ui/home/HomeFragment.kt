@@ -18,6 +18,8 @@ class HomeFragment:Fragment() {
 
     private val viewModel : HomeViewModel by viewModels{ ViewModelFactory(requireContext()) }
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
